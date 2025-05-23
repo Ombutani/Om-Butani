@@ -113,10 +113,10 @@ const allProjects = [
 ];
 
 const types = [
-	{ key: "frontend", label: "Frontend Projects" },
-	{ key: "backend", label: "Backend Projects" },
+	{ key: "frontend", label: "Frontend " },
+	{ key: "backend", label: "Backend " },
 	{ key: "designs", label: "Designs" },
-	{ key: "fullstack", label: "Fullstack Projects" },
+	{ key: "fullstack", label: "Full Stack " },
 ];
 
 const Projects = () => {
@@ -136,7 +136,7 @@ const Projects = () => {
 						<button
 							key={t.key}
 							onClick={() => setActiveTab(t.key)}
-							className={`relative font-semibold font-[santoshi] px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-sm sm:text-md transition-all duration-300 mb-4 sm:mb-10 bg-background/90 text-primary group overflow-hidden ${
+							className={`relative font-semibold font-[santoshi] px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-md sm:text-md transition-all duration-300 mb-4 sm:mb-10 bg-background/90 text-primary group overflow-hidden ${
 								activeTab === t.key ? 'bg-primary text-zinc-950 shadow-lg' : ''
 							}`}
 							style={{ minWidth: '140px', maxWidth: '180px', width: 'calc(50% - 0.5rem)' }}

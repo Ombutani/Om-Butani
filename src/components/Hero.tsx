@@ -4,7 +4,7 @@ import image from "../../public/image/om.jpg"
 import pdf from "../../public/Om_resume.pdf";
 const Hero = () => {
   return (
-    <section id="about" className="relative min-h-screen w-full  overflow-x-hidden py-20">
+    <section id="about" className="relative min-h-screen w-full  overflow-x-hidden pt-10">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
@@ -25,10 +25,18 @@ const Hero = () => {
               <span className="font-[santoshi] text-3xl md:text-5xl text-gray-200 font-light">Full Stack Web Developer</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl text-center font-medium md:text-left leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-300 mb-3 max-w-2xl text-center font-medium md:text-left leading-relaxed">
               Passionate about building modern, performant, and delightful digital products for the web.
             </p>
-
+  <p className="text-lg md:text-xl text-gray-300 mb-4 font-medium font-[santoshi] leading-relaxed text-center md:text-left">
+      I am a passionate <span className="text-violet-400">Full Stack Web Developer</span> dedicated to building modern, performant, and delightful digital products.
+          </p>
+          <p className="text-base md:text-lg text-gray-400 mb-4 font-[santoshi] text-center md:text-left">
+            I specialize in <span className="text-primary">React</span>, <span className="text-violet-400">Angular</span>, and <span className="text-cyan-400">Node.js</span>. My journey has taken me from internships to full stack roles, collaborating with teams to deliver high-quality web experiences.
+          </p>
+          <p className="text-base md:text-lg text-gray-400 font-[santoshi] text-center md:text-left mb-8">
+            Beyond coding, I love mentoring, optimizing performance, and exploring new technologies. Let's connect and create something amazing together!
+          </p>
             <div className="flex flex-col sm:flex-row gap-6 w-full max-w-md">
               <a
                 href="#projects"
