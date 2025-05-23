@@ -25,7 +25,7 @@ body{
 
 @layer utilities {
   .glass-card {
-    @apply backdrop-blur-xl bg-white/10 dark:bg-background/70 border border-white/10 shadow-glass rounded-2xl transition-all;
+    @apply backdrop-blur-xl bg-white/10  border border-white/10 shadow-glass rounded-2xl transition-all;
   }
   .card-gradient {
     @apply bg-gradient-to-br from-white/5 via-[#463c75]/10 to-[#5b34a7]/10;

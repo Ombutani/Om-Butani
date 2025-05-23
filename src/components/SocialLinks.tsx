@@ -41,7 +41,7 @@ const SocialLinks = ({ direction = "row" }: Props) => (
         aria-label={s.label}
         className="group hover-scale transition-all p-3 rounded-full shadow-card hover:bg-primary/20"
       >
-        <s.icon className="w-7 h-7 text-gray-700 dark:text-gray-200 group-hover:text-primary transition-colors" />
+        <s.icon className="w-7 h-7 text-gray-300  group-hover:text-primary transition-colors" />
       </a>
     ))}
   </div>

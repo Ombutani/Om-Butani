@@ -24,7 +24,7 @@ const experiences = [
 
 
 const ExperienceSection = () => (
-   <section className="flex flex-col items-center py-12 sm:py-16 md:py-24 px-4 relative h-full font-[santoshi]" id="experience">
+   <section className="flex flex-col items-center py-12 sm:py-16 md:py-24 px-4 relative h-full max-w-full font-[santoshi]" id="experience">
     {/* Enhanced background effects - made responsive */}
     <div className="absolute inset-0 pointer-events-none z-0" aria-hidden>
       <div className="w-[200px] sm:w-[300px] md:w-[400px] h-[200px] sm:h-[300px] md:h-[400px] bg-gradient-to-br from-violet-300/30 via-blue-300/30 to-cyan-200/30 rounded-full blur-[80px] sm:blur-[100px] md:blur-[120px] animate-pulse absolute left-[-10%] sm:left-[-15%] md:left-[-20%] top-[-5%] sm:top-[-8%] md:top-[-10%]" />
@@ -41,11 +41,11 @@ const ExperienceSection = () => (
         <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/80 to-primary/20 hidden md:block" />
 
         {experiences.map((experience, index) => (
-          <div key={index} className="group . relative md:ml-24 glass-card shadow-glass border border-white/10">
+          <div key={index} className="group  relative md:ml-24 glass-card shadow-glass border border-white/10">
             {/* Timeline dot - visible only on medium and larger screens */}
             <div className="hidden md:block absolute left-[-4.5rem] top-0 w-4 h-4 rounded-full bg-primary transform transition-all duration-300 group-hover:scale-150 group-hover:shadow-lg" />
             
-            <div className="rounded-xl p-4 sm:p-6 md:p-8 shadow-xl border border-gray-100/50 transform transition-all duration-300 hover:shadow-2xl">
+            <div className="rounded-xl p-4 sm:p-6 md:p-8 shadow-xl border border-gray-100/50 transform transition-all duration-300 hover:shadow-2xl bg-black">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <h3 className="text-xl sm:text-2xl font-bold font-[santoshi] text-primary">{experience.title}</h3>
                 <p className="text-primary font-semibold font-[santoshi] px-3 py-1 rounded-full text-sm mt-2 md:mt-0">

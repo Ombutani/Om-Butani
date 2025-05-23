@@ -23,13 +23,13 @@ const Index = () => {
         </div>
       </main>
       <Toaster />
-      <footer className="py-8 mt-12 text-center text-gray-400 text-sm bg-white/10 dark:bg-background/40 border-t border-gray-800 shadow-glass transition-colors">
+      <footer className="py-8 mt-12 text-center text-gray-400 text-sm bg-white/10  border-t border-gray-800 shadow-glass transition-colors">
         <div className="flex flex-col md:flex-row items-center justify-between container mx-auto gap-2">
-          <span>
+          <span className="text-[16px]">
             © {new Date().getFullYear()}{" "}
-            <span className="font-bold text-gradient-primary">Om Butani</span>. All rights reserved.
+            <span className="font-bold text-gradient-primary ">Om Butani</span>. All rights reserved.
           </span>
-          <span>
+          <span className="text-[16px]">
            Make by<span className="text-primary"> ❤️ </span>Om Enterprises
           </span>
         </div>

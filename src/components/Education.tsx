@@ -27,7 +27,7 @@ const educationList = [
 const Education = () => (
 	<section
 		id="education"
-		className="pb-20 bg-gradient-to-tr  overflow-x-hidden from-[#231c32] w-full font-[santoshi] to-[#241e46] . dark:from-background dark:to-muted"
+		className="pb-20 bg-gradient-to-tr  overflow-x-hidden from-[#00000] w-full font-[santoshi] to-[#000000] "
 	>
 		<div className="container mx-auto max-w-full ">
 			<h2 className="text-4xl md:text-5xl font-bold font-[santoshi] mb-10 text-primary  text-center animate-fade-in-up">

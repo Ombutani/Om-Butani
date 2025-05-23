@@ -125,12 +125,12 @@ const Projects = () => {
 	return (
 		<section
 			id="projects"
-			className="pb-20  overflow-x-hidden bg-gradient-to-tl from-[#18122b] to-[#211c31] text-center font-[santoshi] dark:from-muted/40 dark:to-background"
+			className="pb-20  overflow-x-hidden bg-gradient-to-tl from-[#000000] to-[#000000] text-center font-[santoshi]  "
 		>
 			<div className="container mx-auto px-4">
 				<h2 className="text-4xl md:text-5xl font-bold mb-10 text-center font-[santoshi]  tracking-tight text-white animate-fade-in">
 					My<span className="text-primary ml-2"> Projects</span>
-				</h2>
+				</h2>=
 				<div className="flex flex-wrap justify-center gap-4 mb-10">
 					{types.map((t) => (
 						<button
@@ -212,7 +212,7 @@ const Projects = () => {
 								</div>
 							))}
 						{allProjects.filter((p) => p.type === activeTab).length === 0 && (
-							<div className="text-lg text-gray-500 dark:text-gray-300 text-center col-span-1 sm:col-span-2 lg:col-span-3 py-10 animate-fade-in-up opacity-0 animate-fade-in-up-forwards">
+							<div className="text-lg text-gray-500 text-center col-span-1 sm:col-span-2 lg:col-span-3 py-10 animate-fade-in-up opacity-0 animate-fade-in-up-forwards">
 								No projects in this category yet.
 							</div>
 						)}
