@@ -1,0 +1,60 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'santoshi';
+  src: url(../public/Satoshi-Variable.ttf);
+}
+
+body{
+  font-family: 'santoshi';
+  font-weight: bolder;
+}
+@layer base {
+  html {
+    font-family: 'Inter', 'Playfair Display', serif;
+    background-color: #18122b;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/10 dark:bg-background/70 border border-white/10 shadow-glass rounded-2xl transition-all;
+  }
+  .card-gradient {
+    @apply bg-gradient-to-br from-white/5 via-[#463c75]/10 to-[#5b34a7]/10;
+  }
+  .text-gradient {
+    background: linear-gradient(90deg,#b7aaff 10%, #6E59A5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-primary {
+    background: linear-gradient(90deg, #ab8aff 20%, #b7aaff 40%, #7057fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    filter: brightness(1.15);
+  }
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+  .story-link {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+  .shadow-glass {
+    box-shadow: 0 6px 50px 0 rgba(155,135,245,0.12), 0 2px 8px 0 rgba(30,24,68,0.10);
+  }
+  .drop-shadow-logo-logo {
+    filter: drop-shadow(0 1px 18px #b7aaff55);
+  }
+}
