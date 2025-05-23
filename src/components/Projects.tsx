@@ -125,7 +125,7 @@ const Projects = () => {
 	return (
 		<section
 			id="projects"
-			className="pb-20  overflow-x-hidden bg-gradient-to-tl from-[#000000] to-[#000000] text-center font-[santoshi]  "
+			className="pb-20  overflow-x-hidden bg-black text-center font-[santoshi]  "
 		>
 			<div className="container mx-auto px-4">
 				<h2 className="text-4xl md:text-5xl font-bold mb-10 text-center font-[santoshi]  tracking-tight text-white animate-fade-in">
