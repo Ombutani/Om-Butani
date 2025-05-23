@@ -22,7 +22,9 @@ body{
     font-family: 'Playfair Display', serif;
   }
 }
-
+body{
+  overflow-x: hidden !important;
+}
 @layer utilities {
   .glass-card {
     @apply backdrop-blur-xl bg-white/10  border border-white/10 shadow-glass rounded-2xl transition-all;

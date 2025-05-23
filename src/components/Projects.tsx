@@ -131,17 +131,21 @@ const Projects = () => {
 				<h2 className="text-4xl md:text-5xl font-bold mb-10 text-center font-[santoshi]  tracking-tight text-white animate-fade-in">
 					My<span className="text-primary ml-2"> Projects</span>
 				</h2>=
-				<div className="flex flex-wrap justify-center gap-4 mb-10">
+				<div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-6 sm:mb-10">
 					{types.map((t) => (
 						<button
 							key={t.key}
 							onClick={() => setActiveTab(t.key)}
-							className={`relative font-semibold font-[santoshi] px-6 py-2 rounded-full text-md transition-all duration-300 mb-10 bg-background/90 text-primary group overflow-hidden ${activeTab === t.key ? 'bg-primary text-zinc-950   shadow-lg' : ''}`}
-							style={{ minWidth: 180 }}
+							className={`relative font-semibold font-[santoshi] px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-sm sm:text-md transition-all duration-300 mb-4 sm:mb-10 bg-background/90 text-primary group overflow-hidden ${
+								activeTab === t.key ? 'bg-primary text-zinc-950 shadow-lg' : ''
+							}`}
+							style={{ minWidth: '140px', maxWidth: '180px', width: 'calc(50% - 0.5rem)' }}
 						>
 							<span className="z-10 relative transition-colors duration-300">{t.label}</span>
 							<span
-								className={`absolute left-0 top-0 h-full w-full bg-primary/20 rounded-full transition-all duration-500 ease-in-out pointer-events-none ${activeTab === t.key ? 'opacity-100 scale-100' : 'opacity-0 scale-75'}`}
+								className={`absolute left-0 top-0 h-full w-full bg-primary/20 rounded-full transition-all duration-500 ease-in-out pointer-events-none ${
+									activeTab === t.key ? 'opacity-100 scale-100' : 'opacity-0 scale-75'
+								}`}
 							/>
 							{activeTab === t.key && (
 								<span className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-2/3 h-1 bg-white/80 opacity-60 transition-all duration-500" />

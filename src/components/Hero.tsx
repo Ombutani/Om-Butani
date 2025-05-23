@@ -50,11 +50,11 @@ const Hero = () => {
           </div>
 
           {/* Right Section */}
-          <div className="md:w-2/5 flex justify-end mt-12 md:mt-0 animate-fade-in-up">
+            <div className="md:w-2/5 flex justify-end mt-12 md:mt-0 animate-fade-in-up">
             <div className="bg-black/20 p-6 rounded-2xl backdrop-blur-sm border border-gray-800">
-              <SocialLinks direction="col" />
+              <SocialLinks direction={window.innerWidth < 768 ? "row" : "col"} />
             </div>
-          </div>
+            </div>
         </div>
       </div>
     </section>
